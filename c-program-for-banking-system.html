@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>C++ Program For Banking System - QnA</title>
+    <meta name="description" content="C++ Program For Banking System, C++ Program with class for Banking System, , , , Learning Passion, 2020-03-26T13:54:58.000000Z, 20, Banking System In C Programming With Source Code (C Projects) - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, c-program-for-banking-system, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="C++ Program For Banking System - QnA" />
+    <meta property="og:description" content="C++ Program For Banking System, C++ Program with class for Banking System, , , , Learning Passion, 2020-03-26T13:54:58.000000Z, 20, Banking System In C Programming With Source Code (C Projects) - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, c-program-for-banking-system, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="C++ Program For Banking System - QnA" />
+    <meta name="twitter:description" content="C++ Program For Banking System, C++ Program with class for Banking System, , , , Learning Passion, 2020-03-26T13:54:58.000000Z, 20, Banking System In C Programming With Source Code (C Projects) - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, c-program-for-banking-system, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://thinkbrainly.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://thinkbrainly.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://thinkbrainly.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://thinkbrainly.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://thinkbrainly.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://thinkbrainly.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://thinkbrainly.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://thinkbrainly.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">C++ Program For Banking System</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">gacusanjames31</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=C%2B%2B+Program+For+Banking+System" alt="C++ Program For Banking System">
+                    </div>
+                    <p></p>
+                    <p>1. What is considered as a concrete solution to prevent the spread of communicable diseases? A. Birth Control C. National ID System B. Health Promotion D. Social Awareness 2. What National Agency implements programs and policies on the prevention and control of diseases? A. Department of Health B. National Bureau of Investigation C. Philippine Overseas Employment Administration D. Philippine Statistics Authority 3. Which program addresses tuberculosis problems in the country by detecting and providing cure to all forms of TB cases? A. Expanded Program on Immunization B. National Blood Services Act of 1994 C. National Tuberculosis Control Program D. Philippine Malaria Information 4. Which is not an agency that is concerned on the control and prevention of diseases? A. National Bureau of Investigation B. Philippine National Blood Bank C. National Tuberculosis Control Program D. Philippine National Kidney Institute 5. Which is the concern of Phil. AIDS Prevention and control Act of 1988? A. HIV C. Malaria B. Tuberculosis D. Dengue​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-what-is-considered-as-a-concrete-solution-to-prevent-the-spread-of-communicable-diseases-a-birth-control-c-national-id-system-b-health-promotion-d-social-awareness-2-what-national-agency-impl">1.
+                                            1. What is considered as a concrete solution to prevent the spread of communicable diseases? A. Birth Control C. National ID System B. Health Promotion D. Social Awareness 2. What National Agency implements programs and policies on the prevention and control of diseases? A. Department of Health B. National Bureau of Investigation C. Philippine Overseas Employment Administration D. Philippine Statistics Authority 3. Which program addresses tuberculosis problems in the country by detecting and providing cure to all forms of TB cases? A. Expanded Program on Immunization B. National Blood Services Act of 1994 C. National Tuberculosis Control Program D. Philippine Malaria Information 4. Which is not an agency that is concerned on the control and prevention of diseases? A. National Bureau of Investigation B. Philippine National Blood Bank C. National Tuberculosis Control Program D. Philippine National Kidney Institute 5. Which is the concern of Phil. AIDS Prevention and control Act of 1988? A. HIV C. Malaria B. Tuberculosis D. Dengue​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-what-is-a-system-of-interconnected-computers-that-share-a-central-storage-system-and-various-peripherals-devices-such-as-printers-scanners-or-routersa-computer-c-computer-systemb-computer-p">2.
+                                            1. What is a system of interconnected computers that share a central storage system and various peripherals devices such as printers, scanners, or routers?
+A. Computer C. Computer System
+B. Computer Peripherals D. Software 
+2. What is an electronic device that accepts, processes, stores, and outputs data at high speeds according to programmed instructions?
+A. Computer C. Computer System
+B. Computer Peripherals D. Software 
+3. Which type of computers is small in size and affordable in price and is use in schools and homes?
+ A. Mainframe Computer C. Minicomputer
+B. Microcomputer D. Supercomputer
+4. Which type of computers is also expensive and very powerful that has many processors working at the same time and is use by large organizations like banks, healthcare company, and a lot more? 
+ A. Mainframe Computer C. Minicomputer
+B. Microcomputer D. Supercomputer
+5. Which type of computers is the biggest in size and the most expensive in price for it can process trillions of instructions in seconds and is use in weather forecasting, physical simulation, and more?
+ A. Mainframe Computer C. Minicomputer
+B. Microcomputer D. Supercomputer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-kids-love-sports-there-are-age-appropriate-programs-for-almost-every-sport-and-playing-challenge-sports-is-a-way-for-kids-to-inn-themselves-in-a-safe-and-encouraging-environment-sports-are-a-nat">3.
+                                            1. Kids love sports. There are age appropriate programs for almost every sport, and playing challenge sports is a way for kids to inn themselves in a safe and encouraging environment. Sports are a natural place to learn important life lessons, and participating in sports can pave the way to unique opportunities that kids might not otherwise have. Over time, as with many group activities, teammates and coaches become like family, so kids that are involvedin sports have larger support systems. Sports are also a very viable way for athletically inclined kids to be able to afford college. Many college and universities offer sports scholarships A. Sports are a healthy way to spend your time. B. Sports scholarships are a good way to go to college. C. Kids benefit in many ways from being involved in sports. D. Every kid should be an athlete. 2. In response to customers' bittercomplaints about long lines, banks are trying new ways to shorten the wait or at least to make it more pleasant. One bank provides coffee and cookies so customers can munch while they wait. Other banks show action movies on a large video screen. One daring bank in California will pay a customer fivedollars if he or she must wait more than five minutes for service. Still other banks offer the most obvious solution of all..they simply hire more bank tellers.A. Other banks show action movies on a large video screen.B. One daring bank in California will pay acustomer five dollars if he or she must wait more than five minutes for service.C. In response to customers' bitter complaints about long lines, banks are trying new ways to shorten the wait or at least to make it more pleasant.D. One bank provides coffee and cookies so customers can munch while they wait.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-the-correct-conceptual-meaning-of-the-following-words1-povertya-it-is-the-state-of-being-inferior-in-quality-or-insufficient-in-amount-b-it-is-the-state-of-being-superior-in-quality-or-suffi">4.
+                                            Give the correct conceptual meaning of the following words:1. PovertyA. It is the state of being inferior in quality or insufficient in amount. B. It is the state of being superior in quality or sufficient in amount. C. It is having a capability of providing the daily basic needs of a family. D. It is having the sufficient amount of resources to support the family. 2. ResourcesA. These are the programs implemented by the government for sustainability. B. These are the interventions given to the people to fight against poverty. C. These are the projects designed by the local government for development. D. These are the materials and/or other assets necessary for effective operation. 3. Government A. The movement of a community towards gender equality. B. The governing body of a nation, state, or community. C. A program of a particular community against terrorism. D. A basic unit of society which serves as foundation of a nation. 4. InfrastructureA. The basic physical and organizational structures and facilities B. The psychological and philosophical perspectives of a nation. C. The scientific and developmental movement of a government. D. The cultural and economic programs of any local government. 5. MicrofinanceA. It is a government banking system which supports its employees. B. It is a nationwide advocacy to fight against economic deprivation. C. It is a type of banking service provided to low-income individuals. D. It is a type of business which protects the small medium enterprises. 6. ConscientiousA. It is wishing to do what is right, especially to do one's work well. B. It is about fighting for the welfare of women and children. C. It is a basic political movement which provides quality education. D. It is an economic intervention which educates young people. 7. EconomyA. It is an extended political business of a government. B. It is a careful management of available resources. C. It is a political agreement of different nations. D. It is a cultural protection and preservation of resources. 8. Colonization A. It is providing the basic rights of indigenous people. B. It is protecting the natural resources of a certain area. C. It is making people productive regardless of their status. D. It is establishing political control over the people of an area. 9. CommunistA. A person who fights against the political ideology of democracy. B. A person who supports the economic movement against poverty. C. A person who believes in the principles of a classless society D. A person establishes the purpose of having a good governance. 10.DisunityA.It is a disagreement and conflict within the group.B.It is a reestablishment of political parties in the society.C.It is an agreement and collaboration of individuals.D.It is an urgent demand for economic development.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#teen14-this-is-defined-as-a-political-unit-congovernment-that-has-sovereignty-presiding-over-apeople-and-well-defined-territory-and-has-the-highestpolitical-organization-a-statec-nationb-nation-st">5.
+                                            Teen14. This is defined as a political unit congovernment that has sovereignty presiding over apeople and well-defined territory and has the highestpolitical organization.a. statec. nationb. nation-state d. state-nation15. It does not possess political sovereignty.a. stateC. nationb. nation-state d. state-nation16. It is a financial institution that lends money both topublic as well as private organizations.a. trade unionsC. corporationsb. labor uniond. banks17. It refers to a broad category of nonstateorganizations representing a company or group of people thatengages in a lawful activity in relation to a public function, suchas the provision of a good or service to the larger society.a. corporationc. cooperativeb. bankd. financial organization18. It refers to an autonomous association whosemembership is voluntary toward the attainment of commoneconomic, social and cultural needs or aspirations.a bankb. cooperative C. NGO d. labor union19. What is the term used to an organization of workerswhose main objective is to protect the welfare of its members?a. labor union b. NGOC. cooperative d. INGO20. They are the funders and donors.a. Government Organizations c. Global organizationsb. People's Organizationsd. Religious organizations21. Which of the following is an example of nonformaleducation?a primary schooling c. adult night classesb. senior high schoold. doctorate program22. What term explains a social institution that formallysocializes members of society?a schoolc. formal educationb. nonformal education d. education23. It is intentional, organized and structured form oflearning, imparted in educational institutions like school, collegeor university in order to modify the behavior of an individual.a schoolc. formal educationb. nonformal education d. education24. Learning that goes on in daily life and can bereceived through daily experiences such as from family, peergroup, the media and other influences in a person'senvironmenta. educationc. formal educationb. nonformal education d. informal education25. It refers to the education of persons who arephysically, mentally, emotionally, socially or culturally differentfrom so-called "normal" individuals.a. special education c. primary educationb. secondary education d. tertiary education26. It consists of the elite or wealthy families.a lower classc. ascribed statusb. upper classd. achieved status27. It is one in which people are born into their socialstanding and will remain in it their whole lives.a caste and closed-class system c. middle classb. open class systemd. lower class28. The individual's position in the social structure.a. upper classC. statush middle class​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#multiple-choice-test1-the-following-are-words-in-information-technology-in-everyday-life-excepta-computerb-methodsc-social-mediad-communication2-internet-consist-of-thousands-of-connected-compu">6.
+                                            Multiple Choice Test1. The following are words in information technology in everyday life EXCEPT;a. Computerb. Methodsc. Social Mediad. Communication2. Internet consist of thousands of connected computer networks around theworld. Which term does NOT refer to Internet?a. netb. On-lineC. "cyberspace"d. "Information Superhighway"3. A modern phenomenon which let you promote your products or services allover the world,a. Digital marketingb. CommunicationC. E-bankingd. Inventory management4. It is a major sector which is vital for the survival of modern mana Educationb. Businessc. Medicald. Agriculture5. Which one exemplifies the Philippines adaptation of IT in education?a. The provision of personal computers to schoolsb. The training of teachers on ICTC. The integration of ICT in the curriculum9d. The online submission of reports6. When was the British Broadcasting Company (BBC) was formed for radiobroadcasting David Sarnoff of RCA created the National Broadcasting Network(NBC) in 1926, and William S. Palely created the Columbia Broadcasting System(CBS) in 19287a October 20, 1915b. October 18, 1928April 7, 1928d. January 25, 19157. Who invented the telephone?a Alexander Graham Bellb. Gugleilo Marconic. Frank B. Jewettd. Alexander Bain8. It is a system for sending messages or files to the accounts of othercomputer users.a Faxb. Telegraphc. Social Networkingd Electronic Mail9. Which of the following is NOT an attribute of social networking?a. Membershipb. Broadcast Mediac. Content Contributiond. Human relationship building10. Which of the following statements is not true about the contribution oftelevision to people?a TV is one of the best inventions the man has ever madeb. TV enriched the intellectc TV becomes the source of information by watching documentarie, scienceprograms, discussions and by learning the most important issues of the day.d. None of the above​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3-sino-ang-hinirang-na-pangulo-ng-kumbensiyon-na-bubuo-sa-bagong-saligang-batasa-juan-ponce-enrilec-cecilia-munoz-palmab-fidel-v-ramosd-joker-arroyo4-alin-ang-hindi-kabilang-na-karapatan-ng-mam">7.
+                                            3. Sino ang hinirang na Pangulo ng Kumbensiyon na bubuo sa bagong Saligang Batas?A. Juan Ponce EnrileC. Cecilia Muñoz PalmaB Fidel V. RamosD. Joker Arroyo4. Alin ang hindi kabilang na karapatan ng mamamayan ayon sa Saligang Batas 19872A. Karapatang mabuhay at maging malayaB. Karapatang magkaroon ng kapanatagan sa kanilang sariliC. Karapatang maging pribado ang pakikipag-ugnayanD. Karapatang makapag-aral ng libre sa kolehiyo5. Ano ang naging ebidensiyang nagpatunay sa matatag na demokrasya sa ilalim ngIkalimang Republika?A. pagkakaroon ng eleksiyonB. pagkakaroon ng libreng edukasyon sa elementaryaC. pagkakaroon ng libreng edukasyon sa sekondaryaD. pagpapadala ng mga manggagawa sa ibang bansa6. Ano ang ginawa ni Pangulong Aquino upang manumbalik ang sigla ng pamumuhunansa bansa?A. Nagpautang sa karatig bansa.B. Namuhunan sa ibang bansa.C. Nagtungo sa ibang bansa upang manghikayat ng mga dayuhang mamumuhunan.D. Nangutang sa World Bank.7. Bakit itinatag ni Pangulong Cory Aquino ang National Reconciliation andDevelopment Program?A. Upang mamahala sa pagpapasigla ng ekonomiya ng bansa.B. Upang mamahala sa pangkalahatang suplay ng pagkain.C. Upang matugunan ang mga dahilan kung bakit nagkakaroon ng pag-aalsaD. Upang mapanatili ang katahimikan sa bansa.8. Ano ang layunin ng proyektong Summer Work Appreciation Program?A. Ang mga kabataang hindi nag-aaral ay mahikayat na mag-aaral muli.B. Ang mga kabataang hindi nag-aaral at nagbabakasyon ay hinikayat magtrabaho.C. Ang mga kabataang walang tahanan ay mabigyan ng masisilungan.D. Ang mga kabataang inaabuso ay mabigyan ng proteksiyon.9. Bilang kabataan, ano ang iyong maiaambag sa pagpapanatili ng demokrasya sa bansa?A. Sayangin ang oportunidad na mag-aral.B. Balewalain ang mga proyekto ng pamahalaan para sa lahat.C. Mangibang bansa na lamang upang hindi makita ang kahirapan.D. Suportahan ang mga programa ng pamahalaan at sumunod sa batas.10. Alin ang hindi kabilang na programa ni Pangulong Corazon Aquino para sa mgamanggagawa?A. Community Employment and Development ProgramB. Free Interprise SystemC. Overseas EmploymentD. Industrial Peace Accord.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#read-and-comprehend-each-item-in-your-answer-sheet-shade-the-circle-that-corresponds-the-letter-of-your-best-answer-no-erasures-1-he-introduced-microsofta-bill-gatesb-steve-jobsc-mark-zucke">8.
+                                            READ AND COMPREHEND Each item. In your answer sheet, shade the circle that corresponds the letter of your best answer. No erasures. 1. He introduced Microsoft(a) BILL GATES(b) STEVE JOBS(c) MARK ZUCKERBERG(d) MARTHA LANE FOX(e) TIM BERNERS-LEE 2. He introduced Apple(a) BILL GATES(b) STEVE JOBS (c) MARK ZUCKERBERG(d) MARTHA LANE FOX(e) TIM BERNERS-LEE 3. It is a document that is suitable for the World Wide Web(a) WEB PAGE(b) WEBSITE (c) WEB BROWSER 4. It is a related collection of World Wide Web (WWW) files that includes a beginning file located a home page.(a) Web page(b) WEBSITE(c) WEB BROWSER 5 It is a software application for retrieving, presenting, and traversing information resources on the World Wide Web(a) Web page(b) WEBSITE(C) WEB BROWSER 6. It is also known as flat page or stationary page because the page is "as is" and cannot be manipulated by the user(a) Web 1.0 Static(b) Web 2.0(c) Web 3.0 and the Semantic Web 7. It allows users to use web browsers instead of just using their operating system(a) Web 1.0 Static(b) Web 2.0(c) Web 3.0 and the Semantic Web 8. It is a movement led by the World Wide Web Consortium(a) Web 1.0 Static(b) Web 2.0(c) Web 3.0 and the Semantic Web 9. It is a website, application, or online channel that enables web users to create, co- create, discuss, modify, and exchange user-generated content(a) CONVERGENCE(b) SOCIAL MEDIA(c) MOBILE TECHNOLOGIES(d) ASSISTIVE MEDIA 10. The popularity of smartphones and tablets has taken a major rise over the years. Several of these devices are capable of using high-speed Internet(a) CONVERGENCE(b) SOCIAL MEDIA(C) MOBILE TECHNOLOGIES(d) ASSISTIVE MEDIA 11. The following are the Some Tips to Stay Safe Online except one(1) Be mindful on what you share online.(2) Do not just accept terms conditions, read it.(3) Do not(4)share your password with anyone. (5) Do not talk to strangers whether online of face to-fece.(6) Do not speak  when your mouth  is full. A.1B2.C3.D4E5.12. It is a set of instructions that run on your  computer and make your system  do something that an attack wants it do.(a) Adware (b) Spam(c)  Phishing(d) Malware13.These are unwanted emails mostly from bots or advertisers. (a) Adware(b) Spam(c) Phishing (d) Malware14. This is a dangerous computer program that replicates itself through  a network. some worm delete files, others disrupt the network function and still,others send junk mail from infected computer.(a) Adware (b) spam(c) Phishing (d) Malware15.It can erase data, can allow access  of the victim, can corrupt fils, and can be used in phishing for bank account .(a) Adware(b) Spam(c) Phishing(d) Malware"Empowerment  Technology"Pahelp po​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#6-ano-ang-layunin-ng-pagkakatatag-ng-saligang-batas-1987a-mapatalsik-sa-pwesto-ang-pangulo-b-manumbalik-ang-demokrasya-sa-bansa-c-manghikayat-ng-mga-namumuhunan-sa-bansa-d-maitaboy-ang-mga-kalab">9.
+                                            6. Ano ang layunin ng pagkakatatag ng Saligang Batas 1987?A. Mapatalsik sa pwesto ang pangulo.B. Manumbalik ang demokrasya sa bansa.C. Manghikayat ng mga namumuhunan sa bansa.D. Maitaboy ang mga kalaban ng gobyerno.7. Sino-sino ang kinonsulta ng Constitutional Commission sa pagbuo ng bagong saligangbatas? A. iba’t ibang sektor ng lipunanB. mga mamamahayagC. mga biktima ng Martial LawD. mga opisyal ng simbahan8. Kailan unang isinagawa ang pambansang eleksiyon sa ilalim ng pamumuno niPangulong Aquino? A. Mayo 6, 1986B. Mayo 11, 1987C. Mayo 14, 1987D. Mayo 1, 19869. Alin sa mga sumusunod ang isa sa mga naging ambag ng pamunuan ni PangulongCorazon Aquino sa edukasyon? A. Pagbibigay ng libreng pag-aaral sa kolehiyo.B. Pagpapataas ng sahod ng mga sundalo.C. Pagpapagawa ng mga bagong tulay.D. Pagpapatayo ng maraming mga paaralan sa elementarya at sekondarya.10. Ano ang kahulugan ng programang SWAP? A. Summer Workshop Appreciation ProgramB. Summer Work Appreciation ProgramC. Sustainable Work Appreciation ProgramD. Sustainable Workshop Appreciation Practice11. Kailan pinagtibay ang Saligang Batas ng 1987?A. Pebrero 2, 1987B. Pebrero 22, 1986C. Pebrero 24, 1986D. Mayo 11, 198712. Bakit nilikha ni Pangulong Aquino ang Constitutional Commission? A. Upang bumuo ng bagong konstitusyon na magpapatatag sa demokrasya sa bansa.B. Upang bumuo ng mga mamamayang mamumuno sa pagpapalaganap ng katahimikanC. Upang bumuo ng grupong magtatanggol sa mga naaabuso.D. Upang bumuo ng grupo ng mga naging biktima ng Martial Law .13. Sino ang hinirang na Pangulo ng Kumbensiyon na bubuo sa bagong Saligang Batas? A. Juan Ponce EnrileB. Fidel V. RamosC. Cecilia Muñoz PalmaD. Joker Arroyo14. Alin ang hindi kabilang na karapatan ng mamamayan ayon sa Saligang Batas 1987? A. Karapatang mabuhay at maging malayaB. Karapatang magkaroon ng kapanatagan sa kanilang sariliC. Karapatang maging pribado ang pakikipag-ugnayanD. Karapatang makapag-aral ng libre sa kolehiyo15. Ano ang naging ebidensiyang nagpatunay sa matatag na demokrasya sa ilalim ng Ikalimang Republika? A. pagkakaroon ng eleksiyonB. pagkakaroon ng libreng edukasyon sa elementaryaC. pagkakaroon ng libreng edukasyon sa sekondaryaD. pagpapadala ng mga manggagawa sa ibang bansa16. Ano ang ginawa ni Pangulong Aquino upang manumbalik ang sigla ng pamumuhunansa bansa? A. Nagpautang sa karatig bansa.B. Namuhunan sa ibang bansa.C. Nagtungo sa ibang bansa upang manghikayat ng mga dayuhang mamumuhunan.D. Nangutang sa World Bank .17. Bakit itinatag ni Pangulong Cory Aquino ang National Reconciliation andDevelopment Program?A. Upang mamahala sa pagpapasigla ng ekonomiya ng bansa.B. Upang mamahala sa pangkalahatang suplay ng pagkain.C. Upang matugunan ang mga dahilan kung bakit nagkakaroon ng pag-aalsaD. Upang mapanatili ang katahimikan sa bansa.18. Ano ang layunin ng proyektong Summer Work Appreciation Program? A. Ang mga kabataang hindi nag-aaral ay mahikayat na mag-aaral muli.B. Ang mga kabataang hindi nag-aaral at nagbabakasyon ay hinikayat magtrabaho.C. Ang mga kabataang walang tahanan ay mabigyan ng masisilungan.D. Ang mga kabataang inaabuso ay mabigyan ng proteksiyon.19. Bilang kabataan, ano ang iyong maiaambag sa pagpapanatili ng demokrasya sa bansa? A. Sayangin ang oportunidad na mag-aral.B. Balewalain ang mga proyekto ng pamahalaan para sa lahat.C. Mangibang bansa na lamang upang hindi makita ang kahirapan.D. Suportahan ang mga programa ng pamahalaan at sumunod sa batas.20. Alin ang hindi kabilang na programa ni Pangulong Corazon Aquino para sa mga manggagawa? A. Community Employment and Development ProgramB. Free Interprise SystemC. Overseas EmploymentD. Industrial Peace Accordpasagut ng tama please​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#c-identification-identify-what-is-being-described-by-each-statement-below-a-trojan-this-is-a-collective-term-for-viruses-worms-and-trojans-this-is-a-program-that-cannot-reproduce-itself-but-masks">10.
+                                            C. IDENTIFICATION. Identify what is being described by each statement below. a trojan This is a collective term for viruses, worms and trojans. This is a program that cannot reproduce itself but masks to be something useful and tricks the user into activating it 3. This program gives access to and control over a computer or other system 4. This is an example of banking malware that is both a trojan and a worm. 5. This is a code snippet that inserts itself into another application in order to sprezo and replicate itself 6. This is the part of a virus code that does the illicit work it is intended for. 7. Through this device, viruses where spread in the pre-intemet days. 8. This is a virus that infects executable files even if they are not running. 9. This virus slows down programs and damage system files by targeting executable files when a user runs them. 10. Titis virus uaveis ümrough network connections and revicate trentselves through shared sources. 11. This is the first true computer virus developed in 1982 12. He created a computer virus based on a Microsoft Word Macro in 1999. 13. This worm attacked computers through Microsoft Windows vulnerability a d was created by Sven Jaschan. 14. Another term for My Doom virus that creates a backdoor in a computer's operating system. 15. This is the vulnerability exploited by Code Red and Code Red II. 16. This Trojan horse program tums computers into zombies or bots. 17. This is an easily detected virus that infects the browser and redirects it to malicious wehsites 18. This virus type is one of the easiest to detect and remove due to its targeted nature of specific file type, most commonly executable files. 19. This code ensures that the virus' payload executes at a specific time or under a certain condition. 20. This virus hides out in a file in a USB drive or email attachment​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#11-which-of-the-following-is-not-true-about-non-state-institutions-a-some-are-for-profit-while-some-are-not-b-some-are-foreign-while-some-are-local-c-they-contribute-a-lot-to-the-economy-d-the">11.
+                                            11. Which of the following is NOT TRUE about non-state institutions? A. Some are for profit while some are not B. Some are foreign while some are local. C. They contribute a lot to the economy. D. They do not influence what the government does. 12. Non-state institutions are not directly connected to the government, but still play a significant role in perfo state functions. Which of the following is LEAST likely to be a classification of non-state institutions? A. Civil B. Market C. Political D. Transnational 13. Non-state institutions function just like the government. In relation to government functions, what term describes the function of non-state institutions? A. Band-aid B. Gap-filling C. Long-term D. Replacement 14. Non-state institutions play a very important role in people's daily lives. Which non-state institution help acquire money or property in order to start a business? A. Banks B. Cooperatives C. Corporations D. Trade unions 15. If workers want to convince the government to end contractualization but the government is not liste non-state institution will be able to gather workers and force dialogue with the government? A. Cooperative B. Labor unions C. Rural and farmers' banks D. Workers who are members of corporations 16. Education is a social institution that has its own definition. Which of the following bests define educa A. It is a social institution that improve social status B. It is a social institution that helps people think, feel, and behave in a way that contributes to t C. It is a social institution through which a society's children are taught basic academic knowled skills, and cultural norms. D. All the above 17. The educational system in the Philippines has two forms: the formal and the nonformal. Which of th elongs to a nonformal education? A. An educational activity about work skills. B. An educational program for out of school children.​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="1-what-is-considered-as-a-concrete-solution-to-prevent-the-spread-of-communicable-diseases-a-birth-control-c-national-id-system-b-health-promotion-d-social-awareness-2-what-national-agency-impl">
+                            1. 1. What is considered as a concrete solution to prevent the spread of communicable diseases? A. Birth Control C. National ID System B. Health Promotion D. Social Awareness 2. What National Agency implements programs and policies on the prevention and control of diseases? A. Department of Health B. National Bureau of Investigation C. Philippine Overseas Employment Administration D. Philippine Statistics Authority 3. Which program addresses tuberculosis problems in the country by detecting and providing cure to all forms of TB cases? A. Expanded Program on Immunization B. National Blood Services Act of 1994 C. National Tuberculosis Control Program D. Philippine Malaria Information 4. Which is not an agency that is concerned on the control and prevention of diseases? A. National Bureau of Investigation B. Philippine National Blood Bank C. National Tuberculosis Control Program D. Philippine National Kidney Institute 5. Which is the concern of Phil. AIDS Prevention and control Act of 1988? A. HIV C. Malaria B. Tuberculosis D. Dengue​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. B. Health Promotion</p><p>2. A.</p><p>3. C.</p><p>4. A.</p><p>5. A.</p><p></p><p>Happy learning!</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-what-is-a-system-of-interconnected-computers-that-share-a-central-storage-system-and-various-peripherals-devices-such-as-printers-scanners-or-routersa-computer-c-computer-systemb-computer-p">
+                            2. 1. What is a system of interconnected computers that share a central storage system and various peripherals devices such as printers, scanners, or routers?
+A. Computer C. Computer System
+B. Computer Peripherals D. Software 
+2. What is an electronic device that accepts, processes, stores, and outputs data at high speeds according to programmed instructions?
+A. Computer C. Computer System
+B. Computer Peripherals D. Software 
+3. Which type of computers is small in size and affordable in price and is use in schools and homes?
+ A. Mainframe Computer C. Minicomputer
+B. Microcomputer D. Supercomputer
+4. Which type of computers is also expensive and very powerful that has many processors working at the same time and is use by large organizations like banks, healthcare company, and a lot more? 
+ A. Mainframe Computer C. Minicomputer
+B. Microcomputer D. Supercomputer
+5. Which type of computers is the biggest in size and the most expensive in price for it can process trillions of instructions in seconds and is use in weather forecasting, physical simulation, and more?
+ A. Mainframe Computer C. Minicomputer
+B. Microcomputer D. Supercomputer</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. C. Computer System</p><p>2. A. Computer</p><p>3. B. Microcomputer</p><p>4. A. Mainframe Computer</p><p>5. D. Supercomputer</p><br />
+                                            <h2 class="ez-toc-section" id="1-kids-love-sports-there-are-age-appropriate-programs-for-almost-every-sport-and-playing-challenge-sports-is-a-way-for-kids-to-inn-themselves-in-a-safe-and-encouraging-environment-sports-are-a-nat">
+                            3. 1. Kids love sports. There are age appropriate programs for almost every sport, and playing challenge sports is a way for kids to inn themselves in a safe and encouraging environment. Sports are a natural place to learn important life lessons, and participating in sports can pave the way to unique opportunities that kids might not otherwise have. Over time, as with many group activities, teammates and coaches become like family, so kids that are involvedin sports have larger support systems. Sports are also a very viable way for athletically inclined kids to be able to afford college. Many college and universities offer sports scholarships A. Sports are a healthy way to spend your time. B. Sports scholarships are a good way to go to college. C. Kids benefit in many ways from being involved in sports. D. Every kid should be an athlete. 2. In response to customers' bittercomplaints about long lines, banks are trying new ways to shorten the wait or at least to make it more pleasant. One bank provides coffee and cookies so customers can munch while they wait. Other banks show action movies on a large video screen. One daring bank in California will pay a customer fivedollars if he or she must wait more than five minutes for service. Still other banks offer the most obvious solution of all..they simply hire more bank tellers.A. Other banks show action movies on a large video screen.B. One daring bank in California will pay acustomer five dollars if he or she must wait more than five minutes for service.C. In response to customers' bitter complaints about long lines, banks are trying new ways to shorten the wait or at least to make it more pleasant.D. One bank provides coffee and cookies so customers can munch while they wait.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. C</p><p>2. C</p><p><strong>Explanation:</strong></p><p>hope it helps y'all</p><br />
+                                            <h2 class="ez-toc-section" id="give-the-correct-conceptual-meaning-of-the-following-words1-povertya-it-is-the-state-of-being-inferior-in-quality-or-insufficient-in-amount-b-it-is-the-state-of-being-superior-in-quality-or-suffi">
+                            4. Give the correct conceptual meaning of the following words:1. PovertyA. It is the state of being inferior in quality or insufficient in amount. B. It is the state of being superior in quality or sufficient in amount. C. It is having a capability of providing the daily basic needs of a family. D. It is having the sufficient amount of resources to support the family. 2. ResourcesA. These are the programs implemented by the government for sustainability. B. These are the interventions given to the people to fight against poverty. C. These are the projects designed by the local government for development. D. These are the materials and/or other assets necessary for effective operation. 3. Government A. The movement of a community towards gender equality. B. The governing body of a nation, state, or community. C. A program of a particular community against terrorism. D. A basic unit of society which serves as foundation of a nation. 4. InfrastructureA. The basic physical and organizational structures and facilities B. The psychological and philosophical perspectives of a nation. C. The scientific and developmental movement of a government. D. The cultural and economic programs of any local government. 5. MicrofinanceA. It is a government banking system which supports its employees. B. It is a nationwide advocacy to fight against economic deprivation. C. It is a type of banking service provided to low-income individuals. D. It is a type of business which protects the small medium enterprises. 6. ConscientiousA. It is wishing to do what is right, especially to do one's work well. B. It is about fighting for the welfare of women and children. C. It is a basic political movement which provides quality education. D. It is an economic intervention which educates young people. 7. EconomyA. It is an extended political business of a government. B. It is a careful management of available resources. C. It is a political agreement of different nations. D. It is a cultural protection and preservation of resources. 8. Colonization A. It is providing the basic rights of indigenous people. B. It is protecting the natural resources of a certain area. C. It is making people productive regardless of their status. D. It is establishing political control over the people of an area. 9. CommunistA. A person who fights against the political ideology of democracy. B. A person who supports the economic movement against poverty. C. A person who believes in the principles of a classless society D. A person establishes the purpose of having a good governance. 10.DisunityA.It is a disagreement and conflict within the group.B.It is a reestablishment of political parties in the society.C.It is an agreement and collaboration of individuals.D.It is an urgent demand for economic development.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.) A</p><p></p><p>2.) C</p><p></p><p>3.) B</p><p></p><p>4.) A</p><p></p><p>5.) D</p><p></p><p>6.) B</p><p></p><p>7.) A</p><p></p><p>8.) A</p><p></p><p>9.) D</p><p></p><p>10.) B</p><br />
+                                            <h2 class="ez-toc-section" id="teen14-this-is-defined-as-a-political-unit-congovernment-that-has-sovereignty-presiding-over-apeople-and-well-defined-territory-and-has-the-highestpolitical-organization-a-statec-nationb-nation-st">
+                            5. Teen14. This is defined as a political unit congovernment that has sovereignty presiding over apeople and well-defined territory and has the highestpolitical organization.a. statec. nationb. nation-state d. state-nation15. It does not possess political sovereignty.a. stateC. nationb. nation-state d. state-nation16. It is a financial institution that lends money both topublic as well as private organizations.a. trade unionsC. corporationsb. labor uniond. banks17. It refers to a broad category of nonstateorganizations representing a company or group of people thatengages in a lawful activity in relation to a public function, suchas the provision of a good or service to the larger society.a. corporationc. cooperativeb. bankd. financial organization18. It refers to an autonomous association whosemembership is voluntary toward the attainment of commoneconomic, social and cultural needs or aspirations.a bankb. cooperative C. NGO d. labor union19. What is the term used to an organization of workerswhose main objective is to protect the welfare of its members?a. labor union b. NGOC. cooperative d. INGO20. They are the funders and donors.a. Government Organizations c. Global organizationsb. People's Organizationsd. Religious organizations21. Which of the following is an example of nonformaleducation?a primary schooling c. adult night classesb. senior high schoold. doctorate program22. What term explains a social institution that formallysocializes members of society?a schoolc. formal educationb. nonformal education d. education23. It is intentional, organized and structured form oflearning, imparted in educational institutions like school, collegeor university in order to modify the behavior of an individual.a schoolc. formal educationb. nonformal education d. education24. Learning that goes on in daily life and can bereceived through daily experiences such as from family, peergroup, the media and other influences in a person'senvironmenta. educationc. formal educationb. nonformal education d. informal education25. It refers to the education of persons who arephysically, mentally, emotionally, socially or culturally differentfrom so-called "normal" individuals.a. special education c. primary educationb. secondary education d. tertiary education26. It consists of the elite or wealthy families.a lower classc. ascribed statusb. upper classd. achieved status27. It is one in which people are born into their socialstanding and will remain in it their whole lives.a caste and closed-class system c. middle classb. open class systemd. lower class28. The individual's position in the social structure.a. upper classC. statush middle class​</h2><br />
+                        <p><strong>Answer:</strong></p><p>14.b. nation-state</p><p>15. C. nation</p><p>16. d. banks</p><p>17. d. financial organization</p><p>18. b. cooperative</p><p>19. </p><p>20. c. Global. Global</p><p>21. c. adult night classes</p><p>22. education</p><p>23. c. formal education</p><p>24. d. informal education</p><p>25. . primary education</p><p>26. d. achieved status</p><p>27. a caste and closed-class system</p><p>28. </p><br />
+                                            <h2 class="ez-toc-section" id="multiple-choice-test1-the-following-are-words-in-information-technology-in-everyday-life-excepta-computerb-methodsc-social-mediad-communication2-internet-consist-of-thousands-of-connected-compu">
+                            6. Multiple Choice Test1. The following are words in information technology in everyday life EXCEPT;a. Computerb. Methodsc. Social Mediad. Communication2. Internet consist of thousands of connected computer networks around theworld. Which term does NOT refer to Internet?a. netb. On-lineC. "cyberspace"d. "Information Superhighway"3. A modern phenomenon which let you promote your products or services allover the world,a. Digital marketingb. CommunicationC. E-bankingd. Inventory management4. It is a major sector which is vital for the survival of modern mana Educationb. Businessc. Medicald. Agriculture5. Which one exemplifies the Philippines adaptation of IT in education?a. The provision of personal computers to schoolsb. The training of teachers on ICTC. The integration of ICT in the curriculum9d. The online submission of reports6. When was the British Broadcasting Company (BBC) was formed for radiobroadcasting David Sarnoff of RCA created the National Broadcasting Network(NBC) in 1926, and William S. Palely created the Columbia Broadcasting System(CBS) in 19287a October 20, 1915b. October 18, 1928April 7, 1928d. January 25, 19157. Who invented the telephone?a Alexander Graham Bellb. Gugleilo Marconic. Frank B. Jewettd. Alexander Bain8. It is a system for sending messages or files to the accounts of othercomputer users.a Faxb. Telegraphc. Social Networkingd Electronic Mail9. Which of the following is NOT an attribute of social networking?a. Membershipb. Broadcast Mediac. Content Contributiond. Human relationship building10. Which of the following statements is not true about the contribution oftelevision to people?a TV is one of the best inventions the man has ever madeb. TV enriched the intellectc TV becomes the source of information by watching documentarie, scienceprograms, discussions and by learning the most important issues of the day.d. None of the above​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.B</p><p>2.d</p><p>3.A</p><p>4.D</p><p>5.C</p><p>6.B</p><p>7.A</p><p>8.C</p><p>9.B</p><p>10.B</p><p><strong>Answer:</strong></p><p>1.B</p><p>2.D.</p><p>3.C.</p><p>4.C.</p><p>5.B.</p><p>6.B.</p><p>7.A</p><p>8.D</p><p>9.A</p><p>10.C</p><p><strong>Explanation:</strong></p><p>Di ko po sure yung iba ,pero yung iba po 100% sure sorry hope it helps</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="3-sino-ang-hinirang-na-pangulo-ng-kumbensiyon-na-bubuo-sa-bagong-saligang-batasa-juan-ponce-enrilec-cecilia-munoz-palmab-fidel-v-ramosd-joker-arroyo4-alin-ang-hindi-kabilang-na-karapatan-ng-mam">
+                            7. 3. Sino ang hinirang na Pangulo ng Kumbensiyon na bubuo sa bagong Saligang Batas?A. Juan Ponce EnrileC. Cecilia Muñoz PalmaB Fidel V. RamosD. Joker Arroyo4. Alin ang hindi kabilang na karapatan ng mamamayan ayon sa Saligang Batas 19872A. Karapatang mabuhay at maging malayaB. Karapatang magkaroon ng kapanatagan sa kanilang sariliC. Karapatang maging pribado ang pakikipag-ugnayanD. Karapatang makapag-aral ng libre sa kolehiyo5. Ano ang naging ebidensiyang nagpatunay sa matatag na demokrasya sa ilalim ngIkalimang Republika?A. pagkakaroon ng eleksiyonB. pagkakaroon ng libreng edukasyon sa elementaryaC. pagkakaroon ng libreng edukasyon sa sekondaryaD. pagpapadala ng mga manggagawa sa ibang bansa6. Ano ang ginawa ni Pangulong Aquino upang manumbalik ang sigla ng pamumuhunansa bansa?A. Nagpautang sa karatig bansa.B. Namuhunan sa ibang bansa.C. Nagtungo sa ibang bansa upang manghikayat ng mga dayuhang mamumuhunan.D. Nangutang sa World Bank.7. Bakit itinatag ni Pangulong Cory Aquino ang National Reconciliation andDevelopment Program?A. Upang mamahala sa pagpapasigla ng ekonomiya ng bansa.B. Upang mamahala sa pangkalahatang suplay ng pagkain.C. Upang matugunan ang mga dahilan kung bakit nagkakaroon ng pag-aalsaD. Upang mapanatili ang katahimikan sa bansa.8. Ano ang layunin ng proyektong Summer Work Appreciation Program?A. Ang mga kabataang hindi nag-aaral ay mahikayat na mag-aaral muli.B. Ang mga kabataang hindi nag-aaral at nagbabakasyon ay hinikayat magtrabaho.C. Ang mga kabataang walang tahanan ay mabigyan ng masisilungan.D. Ang mga kabataang inaabuso ay mabigyan ng proteksiyon.9. Bilang kabataan, ano ang iyong maiaambag sa pagpapanatili ng demokrasya sa bansa?A. Sayangin ang oportunidad na mag-aral.B. Balewalain ang mga proyekto ng pamahalaan para sa lahat.C. Mangibang bansa na lamang upang hindi makita ang kahirapan.D. Suportahan ang mga programa ng pamahalaan at sumunod sa batas.10. Alin ang hindi kabilang na programa ni Pangulong Corazon Aquino para sa mgamanggagawa?A. Community Employment and Development ProgramB. Free Interprise SystemC. Overseas EmploymentD. Industrial Peace Accord.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.a</p><p>2.b</p><p>3.a</p><p>4.c</p><p>5.c</p><p>6.c</p><p>7.b</p><p>8.a</p><br />
+                                            <h2 class="ez-toc-section" id="read-and-comprehend-each-item-in-your-answer-sheet-shade-the-circle-that-corresponds-the-letter-of-your-best-answer-no-erasures-1-he-introduced-microsofta-bill-gatesb-steve-jobsc-mark-zucke">
+                            8. READ AND COMPREHEND Each item. In your answer sheet, shade the circle that corresponds the letter of your best answer. No erasures. 1. He introduced Microsoft(a) BILL GATES(b) STEVE JOBS(c) MARK ZUCKERBERG(d) MARTHA LANE FOX(e) TIM BERNERS-LEE 2. He introduced Apple(a) BILL GATES(b) STEVE JOBS (c) MARK ZUCKERBERG(d) MARTHA LANE FOX(e) TIM BERNERS-LEE 3. It is a document that is suitable for the World Wide Web(a) WEB PAGE(b) WEBSITE (c) WEB BROWSER 4. It is a related collection of World Wide Web (WWW) files that includes a beginning file located a home page.(a) Web page(b) WEBSITE(c) WEB BROWSER 5 It is a software application for retrieving, presenting, and traversing information resources on the World Wide Web(a) Web page(b) WEBSITE(C) WEB BROWSER 6. It is also known as flat page or stationary page because the page is "as is" and cannot be manipulated by the user(a) Web 1.0 Static(b) Web 2.0(c) Web 3.0 and the Semantic Web 7. It allows users to use web browsers instead of just using their operating system(a) Web 1.0 Static(b) Web 2.0(c) Web 3.0 and the Semantic Web 8. It is a movement led by the World Wide Web Consortium(a) Web 1.0 Static(b) Web 2.0(c) Web 3.0 and the Semantic Web 9. It is a website, application, or online channel that enables web users to create, co- create, discuss, modify, and exchange user-generated content(a) CONVERGENCE(b) SOCIAL MEDIA(c) MOBILE TECHNOLOGIES(d) ASSISTIVE MEDIA 10. The popularity of smartphones and tablets has taken a major rise over the years. Several of these devices are capable of using high-speed Internet(a) CONVERGENCE(b) SOCIAL MEDIA(C) MOBILE TECHNOLOGIES(d) ASSISTIVE MEDIA 11. The following are the Some Tips to Stay Safe Online except one(1) Be mindful on what you share online.(2) Do not just accept terms conditions, read it.(3) Do not(4)share your password with anyone. (5) Do not talk to strangers whether online of face to-fece.(6) Do not speak  when your mouth  is full. A.1B2.C3.D4E5.12. It is a set of instructions that run on your  computer and make your system  do something that an attack wants it do.(a) Adware (b) Spam(c)  Phishing(d) Malware13.These are unwanted emails mostly from bots or advertisers. (a) Adware(b) Spam(c) Phishing (d) Malware14. This is a dangerous computer program that replicates itself through  a network. some worm delete files, others disrupt the network function and still,others send junk mail from infected computer.(a) Adware (b) spam(c) Phishing (d) Malware15.It can erase data, can allow access  of the victim, can corrupt fils, and can be used in phishing for bank account .(a) Adware(b) Spam(c) Phishing(d) Malware"Empowerment  Technology"Pahelp po​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. A.Bill Gates</p><p>2. B. Steve Jobs</p><p>3. A . Web page</p><p>4.B. Website</p><p>5. A</p><br />
+                                            <h2 class="ez-toc-section" id="6-ano-ang-layunin-ng-pagkakatatag-ng-saligang-batas-1987a-mapatalsik-sa-pwesto-ang-pangulo-b-manumbalik-ang-demokrasya-sa-bansa-c-manghikayat-ng-mga-namumuhunan-sa-bansa-d-maitaboy-ang-mga-kalab">
+                            9. 6. Ano ang layunin ng pagkakatatag ng Saligang Batas 1987?A. Mapatalsik sa pwesto ang pangulo.B. Manumbalik ang demokrasya sa bansa.C. Manghikayat ng mga namumuhunan sa bansa.D. Maitaboy ang mga kalaban ng gobyerno.7. Sino-sino ang kinonsulta ng Constitutional Commission sa pagbuo ng bagong saligangbatas? A. iba’t ibang sektor ng lipunanB. mga mamamahayagC. mga biktima ng Martial LawD. mga opisyal ng simbahan8. Kailan unang isinagawa ang pambansang eleksiyon sa ilalim ng pamumuno niPangulong Aquino? A. Mayo 6, 1986B. Mayo 11, 1987C. Mayo 14, 1987D. Mayo 1, 19869. Alin sa mga sumusunod ang isa sa mga naging ambag ng pamunuan ni PangulongCorazon Aquino sa edukasyon? A. Pagbibigay ng libreng pag-aaral sa kolehiyo.B. Pagpapataas ng sahod ng mga sundalo.C. Pagpapagawa ng mga bagong tulay.D. Pagpapatayo ng maraming mga paaralan sa elementarya at sekondarya.10. Ano ang kahulugan ng programang SWAP? A. Summer Workshop Appreciation ProgramB. Summer Work Appreciation ProgramC. Sustainable Work Appreciation ProgramD. Sustainable Workshop Appreciation Practice11. Kailan pinagtibay ang Saligang Batas ng 1987?A. Pebrero 2, 1987B. Pebrero 22, 1986C. Pebrero 24, 1986D. Mayo 11, 198712. Bakit nilikha ni Pangulong Aquino ang Constitutional Commission? A. Upang bumuo ng bagong konstitusyon na magpapatatag sa demokrasya sa bansa.B. Upang bumuo ng mga mamamayang mamumuno sa pagpapalaganap ng katahimikanC. Upang bumuo ng grupong magtatanggol sa mga naaabuso.D. Upang bumuo ng grupo ng mga naging biktima ng Martial Law .13. Sino ang hinirang na Pangulo ng Kumbensiyon na bubuo sa bagong Saligang Batas? A. Juan Ponce EnrileB. Fidel V. RamosC. Cecilia Muñoz PalmaD. Joker Arroyo14. Alin ang hindi kabilang na karapatan ng mamamayan ayon sa Saligang Batas 1987? A. Karapatang mabuhay at maging malayaB. Karapatang magkaroon ng kapanatagan sa kanilang sariliC. Karapatang maging pribado ang pakikipag-ugnayanD. Karapatang makapag-aral ng libre sa kolehiyo15. Ano ang naging ebidensiyang nagpatunay sa matatag na demokrasya sa ilalim ng Ikalimang Republika? A. pagkakaroon ng eleksiyonB. pagkakaroon ng libreng edukasyon sa elementaryaC. pagkakaroon ng libreng edukasyon sa sekondaryaD. pagpapadala ng mga manggagawa sa ibang bansa16. Ano ang ginawa ni Pangulong Aquino upang manumbalik ang sigla ng pamumuhunansa bansa? A. Nagpautang sa karatig bansa.B. Namuhunan sa ibang bansa.C. Nagtungo sa ibang bansa upang manghikayat ng mga dayuhang mamumuhunan.D. Nangutang sa World Bank .17. Bakit itinatag ni Pangulong Cory Aquino ang National Reconciliation andDevelopment Program?A. Upang mamahala sa pagpapasigla ng ekonomiya ng bansa.B. Upang mamahala sa pangkalahatang suplay ng pagkain.C. Upang matugunan ang mga dahilan kung bakit nagkakaroon ng pag-aalsaD. Upang mapanatili ang katahimikan sa bansa.18. Ano ang layunin ng proyektong Summer Work Appreciation Program? A. Ang mga kabataang hindi nag-aaral ay mahikayat na mag-aaral muli.B. Ang mga kabataang hindi nag-aaral at nagbabakasyon ay hinikayat magtrabaho.C. Ang mga kabataang walang tahanan ay mabigyan ng masisilungan.D. Ang mga kabataang inaabuso ay mabigyan ng proteksiyon.19. Bilang kabataan, ano ang iyong maiaambag sa pagpapanatili ng demokrasya sa bansa? A. Sayangin ang oportunidad na mag-aral.B. Balewalain ang mga proyekto ng pamahalaan para sa lahat.C. Mangibang bansa na lamang upang hindi makita ang kahirapan.D. Suportahan ang mga programa ng pamahalaan at sumunod sa batas.20. Alin ang hindi kabilang na programa ni Pangulong Corazon Aquino para sa mga manggagawa? A. Community Employment and Development ProgramB. Free Interprise SystemC. Overseas EmploymentD. Industrial Peace Accordpasagut ng tama please​</h2><br />
+                        <p>6.B</p><p>7.A</p><p>8.B</p><p>9.D</p><p>10.B</p><p>11.D</p><p>12.A</p><p>13.B</p><p>14.D</p><p>15.A</p><p>16.C</p><p>17.A</p><p>18.A</p><p>19.D </p><p>20.B</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="c-identification-identify-what-is-being-described-by-each-statement-below-a-trojan-this-is-a-collective-term-for-viruses-worms-and-trojans-this-is-a-program-that-cannot-reproduce-itself-but-masks">
+                            10. C. IDENTIFICATION. Identify what is being described by each statement below. a trojan This is a collective term for viruses, worms and trojans. This is a program that cannot reproduce itself but masks to be something useful and tricks the user into activating it 3. This program gives access to and control over a computer or other system 4. This is an example of banking malware that is both a trojan and a worm. 5. This is a code snippet that inserts itself into another application in order to sprezo and replicate itself 6. This is the part of a virus code that does the illicit work it is intended for. 7. Through this device, viruses where spread in the pre-intemet days. 8. This is a virus that infects executable files even if they are not running. 9. This virus slows down programs and damage system files by targeting executable files when a user runs them. 10. Titis virus uaveis ümrough network connections and revicate trentselves through shared sources. 11. This is the first true computer virus developed in 1982 12. He created a computer virus based on a Microsoft Word Macro in 1999. 13. This worm attacked computers through Microsoft Windows vulnerability a d was created by Sven Jaschan. 14. Another term for My Doom virus that creates a backdoor in a computer's operating system. 15. This is the vulnerability exploited by Code Red and Code Red II. 16. This Trojan horse program tums computers into zombies or bots. 17. This is an easily detected virus that infects the browser and redirects it to malicious wehsites 18. This virus type is one of the easiest to detect and remove due to its targeted nature of specific file type, most commonly executable files. 19. This code ensures that the virus' payload executes at a specific time or under a certain condition. 20. This virus hides out in a file in a USB drive or email attachment​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. ) malware</p><p>2.)trojan</p><p>3.)operating system </p><p>4.)the Emotet banking malware</p><p>5.)computer virus</p><p>6.)</p><p>7.)infected floppy disks</p><p>8.)</p><p>9.)</p><p>10.)</p><p>11.)</p><p>12.)</p><p>13.)</p><p>14.)</p><p>15.)</p><p>16.)</p><p>17.)</p><p>18.)</p><p>19.)</p><p>20.)</p><p></p><p><strong>Explanation:</strong></p><p>sorry thats all i know</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="11-which-of-the-following-is-not-true-about-non-state-institutions-a-some-are-for-profit-while-some-are-not-b-some-are-foreign-while-some-are-local-c-they-contribute-a-lot-to-the-economy-d-the">
+                            11. 11. Which of the following is NOT TRUE about non-state institutions? A. Some are for profit while some are not B. Some are foreign while some are local. C. They contribute a lot to the economy. D. They do not influence what the government does. 12. Non-state institutions are not directly connected to the government, but still play a significant role in perfo state functions. Which of the following is LEAST likely to be a classification of non-state institutions? A. Civil B. Market C. Political D. Transnational 13. Non-state institutions function just like the government. In relation to government functions, what term describes the function of non-state institutions? A. Band-aid B. Gap-filling C. Long-term D. Replacement 14. Non-state institutions play a very important role in people's daily lives. Which non-state institution help acquire money or property in order to start a business? A. Banks B. Cooperatives C. Corporations D. Trade unions 15. If workers want to convince the government to end contractualization but the government is not liste non-state institution will be able to gather workers and force dialogue with the government? A. Cooperative B. Labor unions C. Rural and farmers' banks D. Workers who are members of corporations 16. Education is a social institution that has its own definition. Which of the following bests define educa A. It is a social institution that improve social status B. It is a social institution that helps people think, feel, and behave in a way that contributes to t C. It is a social institution through which a society's children are taught basic academic knowled skills, and cultural norms. D. All the above 17. The educational system in the Philippines has two forms: the formal and the nonformal. Which of th elongs to a nonformal education? A. An educational activity about work skills. B. An educational program for out of school children.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>11true</p><p>12false</p><p>13false</p><p>14true</p><p>15false</p><p>16true</p><p>17true</p><p><strong>Explanation:</strong></p><p>hope it helps</p><p>pa braniss pls</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/vqW7htC8jDs?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>health</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/do-s-and-don-ts-in-work-immersion.html">Do s And Don Ts In Work Immersion</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/ender-s-game-book-pdf.html">Ender s Game Book Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/income-payee-s-sworn-declaration.html">Income Payee s Sworn Declaration</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/he-s-into-her-tob.html">He s Into Her Tob</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/wasteland-monsters.html">Wasteland Monsters</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/main-theme-of-noli-me-tangere.html">Main Theme Of Noli Me Tangere</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/tula-at-sanaysay.html">Tula At Sanaysay</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/panhimuyat.html">Panhimuyat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/medicard-cebu-clinic.html">Medicard Cebu Clinic</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/dona-juana-elementary-school.html">Doña Juana Elementary School</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/malolos-constitution-preamble.html">Malolos Constitution Preamble</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/yakan-village.html">Yakan Village</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/certificate-of-recognition-for-speaker.html">Certificate Of Recognition For Speaker</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/chlorine-gas-injector.html">Chlorine Gas Injector</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/deductions-from-the-gross-estate.html">Deductions From The Gross Estate</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/bfp-requirements-for-application-2019.html">Bfp Requirements For Application 2019</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/iso-9001-version-2015-audit-checklist-pdf.html">Iso 9001 Version 2015 Audit Checklist Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/high-protein-pellets-for-gamefowl.html">High Protein Pellets For Gamefowl</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/rfid-online-application-slex.html">Rfid Online Application Slex</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/monastic-supremacy.html">Monastic Supremacy</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://thinkbrainly.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://thinkbrainly.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://thinkbrainly.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://thinkbrainly.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://thinkbrainly.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

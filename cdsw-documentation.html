@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cdsw Documentation - QnA</title>
+    <meta name="description" content="Cdsw Documentation, Experiments with Cloudera Data Science Workbench, , , , Cloudera, Inc., 2018-08-13T21:05:50.000000Z, 20, Getting Started with Cloudera Data Science Workbench | 1.7.x | Cloudera, docs.cloudera.com, 2551 x 1505, png, , 20, cdsw-documentation, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cdsw Documentation - QnA" />
+    <meta property="og:description" content="Cdsw Documentation, Experiments with Cloudera Data Science Workbench, , , , Cloudera, Inc., 2018-08-13T21:05:50.000000Z, 20, Getting Started with Cloudera Data Science Workbench | 1.7.x | Cloudera, docs.cloudera.com, 2551 x 1505, png, , 20, cdsw-documentation, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cdsw Documentation - QnA" />
+    <meta name="twitter:description" content="Cdsw Documentation, Experiments with Cloudera Data Science Workbench, , , , Cloudera, Inc., 2018-08-13T21:05:50.000000Z, 20, Getting Started with Cloudera Data Science Workbench | 1.7.x | Cloudera, docs.cloudera.com, 2551 x 1505, png, , 20, cdsw-documentation, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://thinkbrainly.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://thinkbrainly.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://thinkbrainly.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://thinkbrainly.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://thinkbrainly.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://thinkbrainly.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://thinkbrainly.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://thinkbrainly.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Cdsw Documentation</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">black0225</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Cdsw+Documentation" alt="Cdsw Documentation">
+                    </div>
+                    <p></p>
+                    <p>Another name of concept isa.Summary of Documentb.Documentc.Reviewd.Report​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#another-name-of-concept-isa-summary-of-documentb-documentc-reviewd-report%e2%80%8b">1.
+                                            Another name of concept isa.Summary of Documentb.Documentc.Reviewd.Report​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#provide-at-least-five-sample-document-classified-under-their-class-classification-government-d-ocuments%e2%80%8b">2.
+                                            provide at least five sample document classified under their class classification government D ocuments​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-another-name-of-concept-paper-a-summaty-document-b-reviewc-documentd-report%e2%80%8b">3.
+                                            5. Another name of concept paper..A.summaty document B.reviewc.documentd.report​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-are-the-steps-in-sending-word-documents-to-google-drivewhat-are-the-steps-in-sending-word-dosuments-to-google-drive">4.
+                                            what are the steps in sending word documents to google drive?
+what are the steps in sending word dosuments to google drive</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-questioned-document-in-questioned-document-examination-%e2%80%8b">5.
+                                            What is Questioned Document in Questioned Document examination? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1these-are-first-hand-documents-written-by-those-who-experience-or-witness-the-storyevents-a-primary-documents-b-secondary-documents-c-tertiary-sources-2-original-documents-including-personal-accoun">6.
+                                            1,these are first-hand documents written by those who experience or witness the story/events A.primary documents B.secondary documents C.tertiary sources 2.original documents including personal accounts/eyewitness perspective A.primary documents B.secondary documents C.tertiary sources 3.collections of information such as indexes/indices A.primary documents B.secondary documents C.tertiary sources ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-2-put-a-check-if-it-is-included-in-formatting-a-document-and-x-if-it-isnot-formatting-a-document-refers-to-the-way-a-document-is-laid-out-othe-page-the-way-it-looks-and-is-visually-or-organi">7.
+                                            Activity 2.Put a check if it is included in formatting a document and x if it isnot.Formatting a document refers to the way a document is laid out othe page- the way it looks and is visually or organized and itaddresses things like:Adjusting the alignment of documentAdjusting line spacingdeleting the paragraphAdjusting the page orientationRenaming documentChanging the font size of a documentChanging the font style of a documentreviewing the documentAdding bullets and numberSaving the document​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#is-where-you-can-see-thedefault-in-your-doument-so-you-canedit-tour-document-before-printing%e2%80%8b">8.
+                                            IS WHERE YOU CAN SEE THEDEFAULT IN YOUR DOUMENT SO YOU CANEDIT tour DOcuMENT BEfORe printing​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#five-example-of-documents-of-goverent-documents-%e2%80%8b">9.
+                                            five example of documents of goverent documents ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-all-question-documents-are-disputed-documents-but-not-all-disputed-documents-are-question-documents%e2%80%8b">10.
+                                            why all question documents are disputed documents but not all disputed documents are question documents?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#is-called-word-files-a-documentb-filesc-existing-documentd-new-document%e2%80%8b">11.
+                                            Is called Word Files.a.  documentb. filesc. existing documentd. new document​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-document-is-not-a-type-of-source-document">12.
+                                            Which document is not a type of source document?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-merge-document-and-what-is-the-difference-of-main-document-and-merge-document">13.
+                                            WHAT IS MERGE DOCUMENT? AND WHAT IS THE DIFFERENCE OF MAIN DOCUMENT AND MERGE DOCUMENT?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#you-can-____________the-object-on-the-domcument-or_____________it-to-the-aource-file-after-which-changes-to-the-source-will-be-reflected-on-your-document-choices-quick-parts-embedlinkfootersbuildin">14.
+                                            You can ____________the object on the domcument, or_____________it to the aource file, after which changes to the source will be reflected on your document.choices  Quick parts embedlinkfootersbuilding blocks organizer instert​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#title-or-summary-for-a-document-or-section-of-a-document-%e2%80%8b">15.
+                                            title or summary for a document or section of a document.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-similarities-of-public-document-and-private-documents%e2%80%8b">16.
+                                            the similarities of Public document and private documents​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-how-to-create-a-new-document-2-how-to-create-a-document-using-templates-3-how-to-open-a-document-4-how-to-save-save-as-a-document-5-how-to-print-a-document%e2%80%8b">17.
+                                            1. How to create a New Document? 2. How to create a Document Using Templates? 3. How to open a Document? 4. How to Save - Save as a document? - 5. How to Print a Document?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#identify-the-following-shourtcut-keys1-copy-the-selected-item2-switch-between-open-programs-or-window3-select-an-item-in-document-or-window4-paste-the-selected-item5-save-the-current-file-or-ducu">18.
+                                            Identify the following shourtcut keys1. Copy the selected item2. Switch between open programs or window3. Select an item in document or window4. Paste the selected item5. Save the current file or ducument​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#9-what-type-of-document-which-contains-the-email-information-for-each-of-the-merged-document-that-can-be-letter-stationary-or-template-a-main-document-b-data-document-c-sub-document-d-merge-doc">19.
+                                            9. What type of document which contains the email information for each of the merged document that can be letter, stationary or template? A. Main Document B. Data Document C. Sub Document D. Merge Document​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#nhfgtryeweyre-cdsfw-ewreqccdsw">20.
+                                            nhfgtryeweyre cdsfw  ewreqccdsw </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#this-option-hides-somebut-not-allof-the-elements-of-adobe-photoshop-interface-aadobe-documentbphotoshop-documentctabbed-documentddocument-window%e2%80%8b">21.
+                                            This option hides some,but not all,of the elements of adobe photoshop interface.a)adobe documentb)photoshop documentc)tabbed documentd)document window​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#8-it-displays-your-document-in-full-screen-mode-9-this-is-where-youll-type-and-edit-text-in-the-document10-use-to-move-up-and-down-through-the-pages-of-yourdocument-choicesalign-leftbolddocumenti">22.
+                                            8. It displays your document in full-screen mode.9. This is where you'll type and edit text in the document10. Use to move up and down through the pages of yourdocument.choices:Align LeftBoldDocumentiDocument PaneInclinedItalicizedJustifyParagraphRead ModeRedoRulerScroll Bar​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#leah-will-make-a-documents-and-wants-to-format-first-her-document-to-be-in-a-horizontal-form-when-printed-out-what-she-most-do-a-encode-the-content-of-the-document-right-awayb-format-the-page-orienta">23.
+                                            leah will make a documents and wants to format first her document to be in a horizontal form when printed-out.what she most do.a.encode the content of the document right awayb. format the page orientation of her document c.format the paper size of the document d.format the margin of the document ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-is-a-documented-comparison-of-the-measurement-device-to-be-calibrated-againts-a-traceable-reference-standarddevicea-calibrationb-documentationc-repaird-troubleshooting%e2%80%8b">24.
+                                            It is a documented comparison of the measurement device to be calibrated againts a traceable reference standard/devicea.Calibrationb.Documentationc.Repaird.Troubleshooting​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-is-a-simple-document-or-documents-displayed-in-a-website-%e2%80%8b">25.
+                                            it is a simple document or documents displayed in a website.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-which-part-of-the-document-is-the-headera-top-of-the-documentc-bottom-of-the-documentb-left-margin-of-the-document-c-right-margin-of-the-document%e2%80%8b">26.
+                                            1. Which part of the document is the header?a. Top of the documentc. Bottom of the documentb. Left margin of the document c. Right margin of the document​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-is-a-document-that-contains-text-and-graphics-example-body-of-the-letter-1-puntoa-main-documentb-e-%e2%80%93-mailc-merged-documentd-mailing-list20-this-documents-the-documentation-of-the-main">27.
+                                            It is a document that contains text and graphics. Example body of the letter.1 puntoA. Main documentB. E – mailC. Merged documentD. Mailing list20. This documents the documentation of the main document.1 puntoA. Main documentB. E- mailC. Merged documentD. Mailing listasap po​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#an-enumerator-can-sort-out-753-documents-in-6-hours-if-the-number-of-sorted-documents-varies-directly-as-the-number-of-working-hours-how-many-documents-can-be-sorted-out-in-10-hours-a-550-document">28.
+                                            An enumerator can sort out 753 documents in 6 hours. If the number of sorted documents varies directly as the number of working hours, how many documents can be sorted out in 10 hours? A. 550 documents B. 1205 documents C. 1255 documents D. 1355 documents​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#differentiate-public-documents-and-private-documents">29.
+                                            Differentiate public documents and private documents</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#five-example-of-documents-in-goverment-document%e2%80%8b">30.
+                                            five example of documents in goverment document​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="another-name-of-concept-isa-summary-of-documentb-documentc-reviewd-report%e2%80%8b">
+                            1. Another name of concept isa.Summary of Documentb.Documentc.Reviewd.Report​</h2><br />
+                        <p><strong>Answer:</strong></p><p>b.document</p><p><strong>Explanation:</strong></p><p>my own understanding</p><br />
+                                            <h2 class="ez-toc-section" id="provide-at-least-five-sample-document-classified-under-their-class-classification-government-d-ocuments%e2%80%8b">
+                            2. provide at least five sample document classified under their class classification government D ocuments​</h2><br />
+                        <p><strong>Answer:</strong></p><p>UMID </p><p>SSS </p><p>DRIVERS LISENCE</p><p>PASSPORT</p><p>TIN ID</p><br />
+                                            <h2 class="ez-toc-section" id="5-another-name-of-concept-paper-a-summaty-document-b-reviewc-documentd-report%e2%80%8b">
+                            3. 5. Another name of concept paper..A.summaty document B.reviewc.documentd.report​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A. Summary of Documents</p><br />
+                                            <h2 class="ez-toc-section" id="what-are-the-steps-in-sending-word-documents-to-google-drivewhat-are-the-steps-in-sending-word-dosuments-to-google-drive">
+                            4. what are the steps in sending word documents to google drive?
+what are the steps in sending word dosuments to google drive</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Open your library in Google Drive.</p><p>2. Select the file you want to convert.</p><p>3. Open the More actions menu and select Convert to Google Docs.</p><p>4. In the pop-up, select the destination folder for the converted document. You can select My Drive or The current folder. you can also delete the original file if required </p><p>5. Press Convert</p><p>Hi Trish_n_y </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-is-questioned-document-in-questioned-document-examination-%e2%80%8b">
+                            5. What is Questioned Document in Questioned Document examination? ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>In forensic science, questioned document examination is the examination of documents potentially disputed in a court of law. Its primary purpose is to provide evidence about a suspicious or questionable document using scientific processes and methods. </p><br />
+                                            <h2 class="ez-toc-section" id="1these-are-first-hand-documents-written-by-those-who-experience-or-witness-the-storyevents-a-primary-documents-b-secondary-documents-c-tertiary-sources-2-original-documents-including-personal-accoun">
+                            6. 1,these are first-hand documents written by those who experience or witness the story/events A.primary documents B.secondary documents C.tertiary sources 2.original documents including personal accounts/eyewitness perspective A.primary documents B.secondary documents C.tertiary sources 3.collections of information such as indexes/indices A.primary documents B.secondary documents C.tertiary sources ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. C</p><p>2. B</p><p>3. A</p><p><strong>Explanation:</strong></p><p>Yan yung sagot ko</p><br />
+                                            <h2 class="ez-toc-section" id="activity-2-put-a-check-if-it-is-included-in-formatting-a-document-and-x-if-it-isnot-formatting-a-document-refers-to-the-way-a-document-is-laid-out-othe-page-the-way-it-looks-and-is-visually-or-organi">
+                            7. Activity 2.Put a check if it is included in formatting a document and x if it isnot.Formatting a document refers to the way a document is laid out othe page- the way it looks and is visually or organized and itaddresses things like:Adjusting the alignment of documentAdjusting line spacingdeleting the paragraphAdjusting the page orientationRenaming documentChanging the font size of a documentChanging the font style of a documentreviewing the documentAdding bullets and numberSaving the document​</h2><br />
+                        <p>Answer:</p><p>1)/</p><p>2)/</p><p>3)/</p><p>4)×</p><p>5)/</p><p>6)/</p><p>7)/</p><p>8)/</p><p>9)×</p><p>10)/</p><p>Explanation:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="is-where-you-can-see-thedefault-in-your-doument-so-you-canedit-tour-document-before-printing%e2%80%8b">
+                            8. IS WHERE YOU CAN SEE THEDEFAULT IN YOUR DOUMENT SO YOU CANEDIT tour DOcuMENT BEfORe printing​</h2><br />
+                        <p><strong>Answer :</strong></p><p>Default View</p><p>#CarryOnLearning</p><br />
+                                            <h2 class="ez-toc-section" id="five-example-of-documents-of-goverent-documents-%e2%80%8b">
+                            9. five example of documents of goverent documents ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Types of Government Documents (Executive Branch)
+</p><p>reports.
+</p><p>research reports.
+</p><p>statistical publications.
+</p><p>fact sheets.
+</p><p>handbooks and manuals.
+</p><p>presidential papers.
+</p><p>budgets.
+</p><p>maps and atlases.</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="why-all-question-documents-are-disputed-documents-but-not-all-disputed-documents-are-question-documents%e2%80%8b">
+                            10. why all question documents are disputed documents but not all disputed documents are question documents?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Disguised writing - a deliberate attempt to alter handwriting in hopes of hiding one's identity. Disputed document - a term suggesting that there is an argument or controversy over a document. Disputed document and Questioned document can be used interchangeably to signify a document that is under special scrutiny.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="is-called-word-files-a-documentb-filesc-existing-documentd-new-document%e2%80%8b">
+                            11. Is called Word Files.a.  documentb. filesc. existing documentd. new document​</h2><br />
+                        <p><strong>Answer:a. document</strong></p><p>Word files are called documents. Whenever you start a new project in Word, you'll need to create a new document, which can either be blank or from a template.</p><p><strong>Explanation:</strong></p><p>#Manabi tsudzukeru✰
+</p><p>#Brainly komyuniti o subarashī mono ni suru ☘︎
+</p><p>
+</p><p>༼ つ ◕‿◕ ༽つ​</p><p><strong>Answer:</strong></p><p> b po ang sagot</p><p></p><p> </p><p></p><p>keep learning</p><br />
+                                            <h2 class="ez-toc-section" id="which-document-is-not-a-type-of-source-document">
+                            12. Which document is not a type of source document?</h2><br />
+                        <p><strong>Answer:</strong></p><p>paycheck</p><p><strong>Explanation:</strong></p><p>because paycheck is based on the payroll register and wage documents </p><p><strong>Answer:</strong></p><p></p>Paycheck<p></p><p><strong>Explanation:</strong></p><p></p>Is not a type of source document.<p></p><p>#CarryOnLearning</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-merge-document-and-what-is-the-difference-of-main-document-and-merge-document">
+                            13. WHAT IS MERGE DOCUMENT? AND WHAT IS THE DIFFERENCE OF MAIN DOCUMENT AND MERGE DOCUMENT?</h2><br />
+                        <p><strong>Answer:</strong></p><p>main documents are documents in which you will add ur data source whereas Mail merge is a process to create personalized letters and pre-addressed envelopes or mailing labels for mass mailings from a form letter</p><p><strong>Explanation:</strong></p><p>sana makatulong</p><p><strong>Question</strong><strong>:</strong></p><p><strong>WHAT IS MERGE DOCUMENT?</strong></p><p><strong>Answer:</strong></p><p><strong>Merged document: This is the resulting document that you receive when you merge your mail-merge main document with your address list. The resulting document can be the printed result or a new Word document that contains the merge results.</strong></p><p></p><p><strong>Question</strong><strong>:</strong></p><p><strong>WHAT IS THE DIFFERENCE OF MAIN DOCUMENT AND MERGE DOCUMENT?</strong></p><p><strong>Answer</strong><strong>:</strong></p><p><strong>M</strong><strong>ain documents are documents in which you will add ur data source whereas Mail merge is a process to create personalized letters and pre-addressed envelopes or mailing labels for mass mailings from a form letter</strong><strong>.</strong></p><p></p><p><strong>Explanation</strong><strong>:</strong></p><p><strong>Hope</strong><strong> </strong><strong>i</strong><strong>t</strong><strong> </strong><strong>Helps</strong></p><p><strong>#</strong><strong>MarkmeasBrainliest</strong></p><p><strong>#</strong><strong>CarryOnLearning</strong></p><br />
+                                            <h2 class="ez-toc-section" id="you-can-____________the-object-on-the-domcument-or_____________it-to-the-aource-file-after-which-changes-to-the-source-will-be-reflected-on-your-document-choices-quick-parts-embedlinkfootersbuildin">
+                            14. You can ____________the object on the domcument, or_____________it to the aource file, after which changes to the source will be reflected on your document.choices  Quick parts embedlinkfootersbuilding blocks organizer instert​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Link</p><p>Embed</p><p><strong>Explanation:</strong></p><p>I'm not sure</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="title-or-summary-for-a-document-or-section-of-a-document-%e2%80%8b">
+                            15. title or summary for a document or section of a document.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The title of a document is specified by the TITLE element. The TITLE element should occur in the HEAD of the document. There may only be one title in any document. It should identify the content of the document in a fairly wide context.</p><p><strong>Explanation:</strong></p><p>correct me if I'm WRONG</p><br />
+                                            <h2 class="ez-toc-section" id="the-similarities-of-public-document-and-private-documents%e2%80%8b">
+                            16. the similarities of Public document and private documents​</h2><br />
+                        They are both documents<br />They contain files <br />They can contain information <br /><br />Pa brainliest po <p><strong>Answer:</strong></p><p></p>Public Document means any document issued by a Sponsored Corporation to the public or holders of any class of securitiesprivate document is any other. writing, deed, or instrument executed by a private person without. the intervention of a notary or other person legally authorized by. which some disposition or agreement is proved or set forth.<br />
+                                            <h2 class="ez-toc-section" id="1-how-to-create-a-new-document-2-how-to-create-a-document-using-templates-3-how-to-open-a-document-4-how-to-save-save-as-a-document-5-how-to-print-a-document%e2%80%8b">
+                            17. 1. How to create a New Document? 2. How to create a Document Using Templates? 3. How to open a Document? 4. How to Save - Save as a document? - 5. How to Print a Document?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.make your homework</p><p> 2.create you work</p><p> 3.the please no can see</p><br />
+                                            <h2 class="ez-toc-section" id="identify-the-following-shourtcut-keys1-copy-the-selected-item2-switch-between-open-programs-or-window3-select-an-item-in-document-or-window4-paste-the-selected-item5-save-the-current-file-or-ducu">
+                            18. Identify the following shourtcut keys1. Copy the selected item2. Switch between open programs or window3. Select an item in document or window4. Paste the selected item5. Save the current file or ducument​</h2><br />
+                        <p><strong>Answer:</strong></p>ctrl+calt+tab/windows key+tabctrl+shiftctrl+vctrl+s<p><strong>Explanation:</strong></p><p>brainliest please</p><br />
+                                            <h2 class="ez-toc-section" id="9-what-type-of-document-which-contains-the-email-information-for-each-of-the-merged-document-that-can-be-letter-stationary-or-template-a-main-document-b-data-document-c-sub-document-d-merge-doc">
+                            19. 9. What type of document which contains the email information for each of the merged document that can be letter, stationary or template? A. Main Document B. Data Document C. Sub Document D. Merge Document​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A. Main document</p><p><strong>Explanation:</strong></p><p> because main document is the document which contains the email information for each of the main merged document</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="nhfgtryeweyre-cdsfw-ewreqccdsw">
+                            20. nhfgtryeweyre cdsfw  ewreqccdsw </h2><br />
+                        <p><strong>Answer:</strong></p><p>uhm whats the question? </p> whats the question?<br />
+                                            <h2 class="ez-toc-section" id="this-option-hides-somebut-not-allof-the-elements-of-adobe-photoshop-interface-aadobe-documentbphotoshop-documentctabbed-documentddocument-window%e2%80%8b">
+                            21. This option hides some,but not all,of the elements of adobe photoshop interface.a)adobe documentb)photoshop documentc)tabbed documentd)document window​</h2><br />
+                        <p><strong>Answer:</strong></p><p>D</p><p><strong>Explanation:</strong></p><p>yan po ang sagot sana makatulong</p><br />
+                                            <h2 class="ez-toc-section" id="8-it-displays-your-document-in-full-screen-mode-9-this-is-where-youll-type-and-edit-text-in-the-document10-use-to-move-up-and-down-through-the-pages-of-yourdocument-choicesalign-leftbolddocumenti">
+                            22. 8. It displays your document in full-screen mode.9. This is where you'll type and edit text in the document10. Use to move up and down through the pages of yourdocument.choices:Align LeftBoldDocumentiDocument PaneInclinedItalicizedJustifyParagraphRead ModeRedoRulerScroll Bar​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Nob 12, 2019 — To switch back to the normal mode, press the Esc key on your keyboard. You'll be back to the normal editing </p><br />
+                                            <h2 class="ez-toc-section" id="leah-will-make-a-documents-and-wants-to-format-first-her-document-to-be-in-a-horizontal-form-when-printed-out-what-she-most-do-a-encode-the-content-of-the-document-right-awayb-format-the-page-orienta">
+                            23. leah will make a documents and wants to format first her document to be in a horizontal form when printed-out.what she most do.a.encode the content of the document right awayb. format the page orientation of her document c.format the paper size of the document d.format the margin of the document ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>b yung answer haha</p><p><strong>Explanation:</strong></p><p>If you've ever used Microsoft Word, there's a good chance you've needed to print a document. While Word's printing options are more advanced than some of the other programs in the Office suite, it can still be difficult to get printed documents to look exactly the way you want.</p><p>PA BRAINLEST PLSSS HAHA</p><br />
+                                            <h2 class="ez-toc-section" id="it-is-a-documented-comparison-of-the-measurement-device-to-be-calibrated-againts-a-traceable-reference-standarddevicea-calibrationb-documentationc-repaird-troubleshooting%e2%80%8b">
+                            24. It is a documented comparison of the measurement device to be calibrated againts a traceable reference standard/devicea.Calibrationb.Documentationc.Repaird.Troubleshooting​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>The <strong>Calibration</strong> is a documented comparison of the measurement device to be calibrated againts a traceable reference standard/device</p><p></p><p>#CarryOnLearning</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="it-is-a-simple-document-or-documents-displayed-in-a-website-%e2%80%8b">
+                            25. it is a simple document or documents displayed in a website.​</h2><br />
+                        <p>Answer:A web page is a simple document displayable by a browser. Such documents are written in the HTML language (which we look into in more detail in other articles). A web page can embed a variety of different types of resources such as: style information — controlling a page's look-and-feel.</p><p></p><p>Explanation:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-which-part-of-the-document-is-the-headera-top-of-the-documentc-bottom-of-the-documentb-left-margin-of-the-document-c-right-margin-of-the-document%e2%80%8b">
+                            26. 1. Which part of the document is the header?a. Top of the documentc. Bottom of the documentb. Left margin of the document c. Right margin of the document​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A. Top of the document</p><p><strong>Explanation:</strong></p><p>That's why it is called HEADER</p><br />
+                                            <h2 class="ez-toc-section" id="it-is-a-document-that-contains-text-and-graphics-example-body-of-the-letter-1-puntoa-main-documentb-e-%e2%80%93-mailc-merged-documentd-mailing-list20-this-documents-the-documentation-of-the-main">
+                            27. It is a document that contains text and graphics. Example body of the letter.1 puntoA. Main documentB. E – mailC. Merged documentD. Mailing list20. This documents the documentation of the main document.1 puntoA. Main documentB. E- mailC. Merged documentD. Mailing listasap po​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. B</p><p>2.A</p><p><strong>Explanation:</strong></p>The definition of an e-mail is a message sent from one computer to another over the Internet, using a set webmail server address. An example of an e-mail is a happy birthday message a person sends from their Yahoo account to their mom at her Gmail account. noun.<p></p><p></p>Main Documents. The main document contains the text that does not change and also has the merge fields that allow us to insert the personalized information from data source. Given below is an example of a main document: SAMPLE OF A MAIN DOCUMENT.<br />
+                                            <h2 class="ez-toc-section" id="an-enumerator-can-sort-out-753-documents-in-6-hours-if-the-number-of-sorted-documents-varies-directly-as-the-number-of-working-hours-how-many-documents-can-be-sorted-out-in-10-hours-a-550-document">
+                            28. An enumerator can sort out 753 documents in 6 hours. If the number of sorted documents varies directly as the number of working hours, how many documents can be sorted out in 10 hours? A. 550 documents B. 1205 documents C. 1255 documents D. 1355 documents​</h2><br />
+                        <p><strong>Answer:</strong></p><p>(B)1205 DOCUMENT</p><p><strong>Step-by-step explanation:</strong></p><p>THANKS FOR POINTS</p><br />
+                                            <h2 class="ez-toc-section" id="differentiate-public-documents-and-private-documents">
+                            29. Differentiate public documents and private documents</h2><br />
+                        <p><strong>Answer:</strong></p><p>Public Documents are prepared by public servants while discharging their official or public duty.</p><p></p><p>Private Documents are those documents that are prepared by a person in his private interest and right</p><p></p><p>Hope it helps</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="five-example-of-documents-in-goverment-document%e2%80%8b">
+                            30. five example of documents in goverment document​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>·hearing(testimony)</p><p>·Congressional reports</p><p>·Committee prints </p><p>·Record of proceeding add debates (Congressional Record)</p><p>·Statutes</p><p>·Bills</p><p>·Laws</p><p>·Codes</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/FAUwlN4GhHw?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>english</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/panunuod.html">Panunuod</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/bicol-songs-list.html">Bicol Songs List</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/ua-p-essay.html">Ua p Essay</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/poem-about-god-s-creation.html">Poem About God s Creation</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/operation-break-the-casanova-s-heart.html">Operation Break The Casanova s Heart</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/peltier-module-projects.html">Peltier Module Projects</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/wika-sa-lipunan.html">Wika Sa Lipunan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/st-elsewhere-medical-and-diagnostic-clinic.html">St Elsewhere Medical And Diagnostic Clinic</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/awiting-bayan-poster.html">Awiting Bayan Poster</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/fs-3-episode-7-on-line-learning-through-moocs-answers.html">Fs 3 Episode 7 On Line Learning Through Moocs Answers</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/hyper-light-drifter-arena.html">Hyper Light Drifter Arena</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/grade-8-2nd-periodical-test.html">Grade 8 2nd Periodical Test</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/mga-dahilan-ng-pag-iral-ng-impormal-na-sektor.html">Mga Dahilan Ng Pag Iral Ng Impormal Na Sektor</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/emilio-terrero.html">Emilio Terrero</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/legazpi-cathedral.html">Legazpi Cathedral</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/vuyavuy.html">Vuyavuy</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/ildefonso-p-santos-jr.html">Ildefonso P Santos Jr</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/manpower-schedule-example.html">Manpower Schedule Example</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/filipino-grade-9-teachers-guide.html">Filipino Grade 9 Teacher&#039;s Guide</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://thinkbrainly.github.io/photo-essay-kalikasan.html">Photo Essay Kalikasan</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://thinkbrainly.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://thinkbrainly.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://thinkbrainly.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://thinkbrainly.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://thinkbrainly.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
